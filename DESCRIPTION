@@ -3,37 +3,29 @@ Type: Package
 Title: ANTs in R: Quantification Tools for Biomedical Images
 Version: 0.4.8
 Date: 2019-01-14
-Authors@R: c(
-    person(c("Brian", "B"), "Avants", role = c("aut", "cre"), email = "stnava@gmail.com"),
-    person(c("Benjamin", "M"), "Kandel", role = "ctb", email = "NA"),
-    person(c("Jeff", "T"), "Duda", role = "ctb", email = "NA"),
-    person(c("Philip", "A"), "Cook", role = "ctb", email = "NA"),
-    person(c("Nicholas", "J"), "Tustison", role = "ctb", email = "NA"),
-    person(c("Dorian"), "Pustina", role = "ctb", email = "NA")
-    )
+Authors@R: c( person(c("Brian", "B"), "Avants", role = c("aut", "cre"),
+        email = "stnava@gmail.com"), person(c("Benjamin", "M"),
+        "Kandel", role = "ctb", email = "NA"), person(c("Jeff", "T"),
+        "Duda", role = "ctb", email = "NA"), person(c("Philip", "A"),
+        "Cook", role = "ctb", email = "NA"), person(c("Nicholas", "J"),
+        "Tustison", role = "ctb", email = "NA"), person(c("Dorian"),
+        "Pustina", role = "ctb", email = "NA") )
 Maintainer: Brian B. Avants <stnava@gmail.com>
 Description: ANTsR interfaces state of the art image processing with R
-    statistical methods. The project grew out of the need, at University of
-    Pennsylvania, to develop large-scale analytics pipelines that track provenance
-    from scanner to scientific study. ANTsR wraps an ANTs and ITK C++ core via Rcpp
-    to access these frameworks from within R and support reproducible analyses.
-    Specialized functionality in ANTsR includes image segmentation and
-    registration along imaging specific variations of principal component
-    and canonical correlation analysis.
+        statistical methods. The project grew out of the need, at
+        University of Pennsylvania, to develop large-scale analytics
+        pipelines that track provenance from scanner to scientific
+        study. ANTsR wraps an ANTs and ITK C++ core via Rcpp to access
+        these frameworks from within R and support reproducible
+        analyses. Specialized functionality in ANTsR includes image
+        segmentation and registration along imaging specific variations
+        of principal component and canonical correlation analysis.
 License: Apache License 2.0
 LazyLoad: yes
-Depends:
-    R (>= 3.0),
-    methods,
-    ANTsRCore (>= 0.5.8)
-Imports:
-    graphics,
-    grDevices,
-    magrittr,
-    stats,
-    utils
-Suggests:
-    magic,    
+Depends: R (>= 3.0), methods, ANTsRCore (>= 0.5.8)
+Imports: graphics, grDevices, magrittr, stats, utils
+Suggests: 
+    magic,
     psych,
     rsvd,
     abind,
@@ -83,12 +75,17 @@ Suggests:
     viridis,
     visreg,
     wmtsa,
-    xgboost
+    xgboost,
+    covr
 LazyData: TRUE
 LinkingTo: Rcpp, ITKR, ANTsRCore
 SystemRequirements: cmake, git, clang
-Remotes: stnava/ITKR, ANTsX/ANTsRCore, muschellij2/rflann
 NeedsCompilation: yes
 VignetteBuilder: knitr
 RoxygenNote: 6.1.1.9000
 Encoding: UTF-8
+Repository: Neuroconductor-Devel-Releases
+Remotes:  
+    muschellij2/rflann,
+    neuroconductor-devel-releases/ANTsRCore@d8bcf7ce7ec952909f2d248bad720002d97b54ed
+biocViews: 
