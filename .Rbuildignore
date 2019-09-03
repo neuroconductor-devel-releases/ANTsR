@@ -25,3 +25,6 @@ _config\.yml
 R/confidenceConnected.R
 R/connectedThresholdImage.R
 ^doc$
+^DESCRIPTION\.bak$
+^\./\.travis\.yml\.bak$
+^\./appveyor\.yml\.bak$
